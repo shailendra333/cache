@@ -1,4 +1,4 @@
-# cache
+# read write concurrent cache
 This is a simple implementation of read/write cache which stores the data on disk in a configurable directory.
 The data write to disk happens in a seperate single thread asynchronously which performs IO operations in order it recieves requests.
 The underlying datastructure is Java ConcurrentHashmap which allows for safe concurrent updates. Initial capacity, load factor and the cache storage  directory is configurable via a properties file which can be supplied at run-time. 
