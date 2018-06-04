@@ -6,3 +6,6 @@ For large number of objects and using the automatic file persistence ( using map
  
 Also this contains a datastore implementation which stores the cache entries on disk. There is a configurable root folder which is set at startup time. All the methods are   write behind with respect to the in-memory read/write cache. This  implementation uses a single thread executor to doing all file IO so that the order of cache updates/deletes are maintained as tasks are guaranteed to execute serially. A more sophisticated disk implementation could have used batching and using only the last update of a
 particular key is multiple updates are received for same key.
+
+Running the project ---> The project can be build using maven.The project contains a main method which can be run. Also there is junit test case available.
+For building the project use - mvn -e clean install 
